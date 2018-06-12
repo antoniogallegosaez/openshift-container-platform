@@ -144,6 +144,8 @@ $CLOUDKIND
 
 # fix v3.9.30 according to solution https://access.redhat.com/solutions/3480921
 oreg_url=registry.access.redhat.com/openshift3/ose-${component}:${version}
+oreg_url_master=registry.access.redhat.com/openshift3/ose-${component}:${version}
+oreg_url_node=registry.access.redhat.com/openshift3/ose-${component}:${version}
 openshift_examples_modify_imagestreams=true
 
 # default selectors for router and registry services
