@@ -8,7 +8,7 @@
 				"description": "Base URL for Template Files",
 				"artifactsBaseUrl": ""
 			},
-			"defaultValue": "https://raw.githubusercontent.com/Microsoft/openshift-container-platform/release-3.9"
+			"defaultValue": "https://raw.githubusercontent.com/antoniogallegosaez/openshift-container-platform/release-3.9"
 		},
 		"masterVmSize": {
 			"type": "string",
