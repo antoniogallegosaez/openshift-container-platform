@@ -130,7 +130,7 @@ ansible_become=yes
 openshift_install_examples=true
 deployment_type=openshift-enterprise
 openshift_release="3.9"
-openshift_pkg_version=-3.9.30
+openshift_pkg_version=-3.9.27
 docker_udev_workaround=True
 openshift_use_dnsmasq=true
 openshift_master_default_subdomain=$ROUTING
@@ -144,10 +144,10 @@ openshift_disable_check=memory_availability,docker_image_availability
 $CLOUDKIND
 
 # fix v3.9.30 according to solution https://access.redhat.com/solutions/3480921
-oreg_url=registry.access.redhat.com/openshift3/ose-${component}:${version}
-oreg_url_master=registry.access.redhat.com/openshift3/ose-${component}:${version}
-oreg_url_node=registry.access.redhat.com/openshift3/ose-${component}:${version}
-openshift_examples_modify_imagestreams=true
+#oreg_url=registry.access.redhat.com/openshift3/ose-${component}:${version}
+#oreg_url_master=registry.access.redhat.com/openshift3/ose-${component}:${version}
+#oreg_url_node=registry.access.redhat.com/openshift3/ose-${component}:${version}
+#openshift_examples_modify_imagestreams=true
 
 # default selectors for router and registry services
 openshift_router_selector='region=infra'
