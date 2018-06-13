@@ -250,6 +250,3 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-
-azuredeploy.parameters.gnfprod.json
-azuredeploy.parameters.gnfdev.json
