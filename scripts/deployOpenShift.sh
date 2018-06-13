@@ -129,7 +129,8 @@ ansible_ssh_user=$SUDOUSER
 ansible_become=yes
 openshift_install_examples=true
 deployment_type=openshift-enterprise
-openshift_release=v3.9
+openshift_release="3.9"
+openshift_pkg_version=-3.9.30
 docker_udev_workaround=True
 openshift_use_dnsmasq=true
 openshift_master_default_subdomain=$ROUTING
@@ -144,6 +145,8 @@ $CLOUDKIND
 
 # fix v3.9.30 according to solution https://access.redhat.com/solutions/3480921
 oreg_url=registry.access.redhat.com/openshift3/ose-${component}:${version}
+oreg_url_master=registry.access.redhat.com/openshift3/ose-${component}:${version}
+oreg_url_node=registry.access.redhat.com/openshift3/ose-${component}:${version}
 openshift_examples_modify_imagestreams=true
 
 # default selectors for router and registry services
